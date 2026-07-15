@@ -11,7 +11,6 @@ function App() {
   const [showFullImage, setShowFullImage] = useState(false)
   const [isDark, setIsDark] = useState(false)
 
-  // Theme init (reads saved preference)
   useEffect(() => {
     const currentTheme = localStorage.getItem('theme') || 'light'
     setIsDark(currentTheme === 'dark')
@@ -29,7 +28,6 @@ function App() {
     })
   }
 
-  // Initialize AOS (loaded via CDN script in index.html)
   useEffect(() => {
     if (window.AOS) {
       window.AOS.init({
@@ -42,17 +40,16 @@ function App() {
 
   return (
     <>
-      {/* Sticky navbar (bari + choti sub-navbar dono) - apni normal jagah document flow me rehta he, scroll pr top se chipak jata he */}
+
       <Navbar isDark={isDark} toggleTheme={toggleTheme} onLogoClick={() => setShowFullImage(true)} />
 
-      {/* Sare sections ek hi page pr, har ek full-screen (min-h-screen) */}
       <Home />
       <About />
       <Projects />
       <SkillsEducation />
       <Contact />
 
-      {/* Footer */}
+
       <footer className="bg-ossph-dark dark:bg-gray-950 text-white py-10">
         <div className="container mx-auto px-6 text-center">
           <h3 className="text-xl font-bold mb-2">Muhammad Mohsin Yaqoob</h3>

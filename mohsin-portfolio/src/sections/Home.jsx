@@ -1,4 +1,4 @@
-// Home Section - pehla full-screen section jo user ko sabse pehle nazar aata hai
+
 function Home() {
     return (
         <section
@@ -39,7 +39,6 @@ function Home() {
                     </div>
                 </div>
 
-                {/* Stats */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                     <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-ossph-blue/10 hover:border-ossph-blue/30 transition group">
                         <div className="text-4xl font-bold text-ossph-blue group-hover:scale-110 transition-transform">3+</div>

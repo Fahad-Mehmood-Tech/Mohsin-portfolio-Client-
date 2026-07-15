@@ -1,4 +1,4 @@
-// Skills & Education Section
+
 const skills = [
     'AI Voice Synchronization',
     'Educational Video Editing',
@@ -49,7 +49,6 @@ function SkillsEducation() {
                         </ul>
                     </div>
 
-                    {/* Software + Education stacked */}
                     <div className="space-y-8">
                         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-ossph-blue/10 p-8" data-aos="fade-up">
                             <h3 className="text-xl font-bold text-ossph-blue dark:text-ossph-light mb-5">Software</h3>

@@ -1,4 +1,4 @@
-// About Section - client ka bio, Narrative Orbit aur Gen AI Skool ka context
+
 function About() {
     return (
         <section

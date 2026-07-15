@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import mohsinLogo from '../assets/Mohsin.png'
 
-// Sub-navbar ke section links - id yahan se match hona chahiye har section k <section id="..."> se
 const navLinks = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
@@ -13,7 +12,6 @@ const navLinks = [
 function Navbar({ isDark, toggleTheme, onLogoClick }) {
     const [mobileOpen, setMobileOpen] = useState(false)
 
-    // Smooth scroll to section by id (fixed navbar height ke liye scroll-margin-top section me lagaya hoga)
     const scrollToSection = (id) => {
         const el = document.getElementById(id)
         if (el) {
@@ -23,9 +21,7 @@ function Navbar({ isDark, toggleTheme, onLogoClick }) {
     }
 
     return (
-        // Poora navbar block (bari navbar + choti sub-navbar) normal document flow me he - scroll krte hi page k sath upar chala jata he
         <div className="w-full z-50">
-            {/* ===== Main (Bari) Navbar ===== */}
             <header className="bg-white dark:bg-gray-900 shadow-lg border-b-2 border-ossph-blue/20 dark:border-ossph-light/20">
                 <div className="container mx-auto px-6 py-4">
                     <nav className="flex flex-wrap items-center justify-between">
@@ -68,7 +64,6 @@ function Navbar({ isDark, toggleTheme, onLogoClick }) {
                                     id="theme-icon"
                                 ></i>
                             </button>
-                            {/* Mobile menu toggle - sirf choti screen pr dikhega */}
                             <button
                                 className="md:hidden p-2 bg-ossph-pale dark:bg-gray-800 rounded-lg"
                                 onClick={() => setMobileOpen((v) => !v)}
@@ -80,7 +75,7 @@ function Navbar({ isDark, toggleTheme, onLogoClick }) {
                 </div>
             </header>
 
-            {/* ===== Choti Sub-Navbar (section links) - bari navbar k mid-width se attach ===== */}
+
             <div className="bg-ossph-pale dark:bg-gray-800 border-b border-ossph-blue/20 dark:border-ossph-light/20 shadow-md">
                 <div className="container mx-auto px-6">
                     <div className="hidden md:flex items-center justify-center space-x-8 py-2.5">
@@ -95,7 +90,6 @@ function Navbar({ isDark, toggleTheme, onLogoClick }) {
                         ))}
                     </div>
 
-                    {/* Mobile sub-navbar dropdown */}
                     {mobileOpen && (
                         <div className="md:hidden flex flex-col items-center py-3 space-y-2">
                             {navLinks.map((link) => (

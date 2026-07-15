@@ -1,4 +1,4 @@
-// Projects Section - ye data client ne bheja hai, video links baad me add honge (neeche comments dekhein)
+
 const projects = [
     {
         id: 'metabrains',
@@ -58,7 +58,6 @@ function Projects() {
                     </h2>
                 </div>
 
-                {/* Bara scrollable card jisme sare projects ek-ke-neeche-ek scroll hote hain */}
                 <div
                     className="max-w-3xl mx-auto bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-xl border border-ossph-blue/10 p-4 lg:p-6 max-h-[65vh] overflow-y-auto space-y-6"
                     data-aos="fade-up"
