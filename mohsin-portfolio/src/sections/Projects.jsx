@@ -9,6 +9,7 @@ const projects = [
         tools: ['CapCut', 'Adobe Premiere Pro', 'DaVinci Resolve', 'ElevenLabs'],
         // 👉 YAHAN video file/link add karni hai (e.g. import metabrainsVideo from '../assets/videos/metabrains.mp4')
         video: null,
+        site: 'https://www.metabrains.com/',
     },
     {
         id: 'narrative-orbit',
@@ -59,8 +60,7 @@ function Projects() {
                 </div>
 
                 <div
-                    className="max-w-3xl mx-auto bg-gray-50 dark:bg-gray-900 rounded-2xl shadow-xl border border-ossph-blue/10 p-4 lg:p-6 max-h-[65vh] overflow-y-auto space-y-6"
-                    data-aos="fade-up"
+                    className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center"
                 >
                     {projects.map((project) => (
                         <div
@@ -75,9 +75,9 @@ function Projects() {
                   Example (YouTube embed):
                     <iframe src="https://www.youtube.com/embed/VIDEO_ID" className="w-full h-full" allowFullScreen />
                  ============================================================ */}
-                            <div className="w-full aspect-video bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                            <div className="w-1x1 aspect-video bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
                                 {project.video ? (
-                                    <video src={project.video} controls className="w-full h-full object-cover" />
+                                    <video src={project.video} controls className="w-1x1 h-1x1 object-cover" />
                                 ) : (
                                     <span className="text-sm text-gray-500 dark:text-gray-400">
                                         Video coming soon — {project.name}
@@ -86,8 +86,18 @@ function Projects() {
                             </div>
 
                             <div className="p-6">
-                                <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
+                                <div className="flex items-center flex-wrap gap-2 mb-2">
                                     <h3 className="text-xl font-bold text-gray-900 dark:text-white">{project.name}</h3>
+                                    {project.site && (
+                                        <a
+                                            href={project.site}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-xs px-2 py-1 bg-ossph-blue/10 dark:bg-ossph-light/20 text-ossph-blue dark:text-ossph-light rounded hover:bg-ossph-blue/20 dark:hover:bg-ossph-light/30 transition-colors"
+                                        >
+                                            Visit Site
+                                        </a>
+                                    )}
                                     <span className="text-xs font-semibold px-3 py-1 bg-ossph-blue/10 dark:bg-ossph-light/20 text-ossph-blue dark:text-ossph-light rounded-full">
                                         {project.role}
                                     </span>
@@ -104,6 +114,7 @@ function Projects() {
                                             {tool}
                                         </span>
                                     ))}
+
                                 </div>
                             </div>
                         </div>

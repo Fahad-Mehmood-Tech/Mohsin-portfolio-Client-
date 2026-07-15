@@ -9,11 +9,6 @@ function Home() {
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-ossph-light/5 rounded-full blur-3xl"></div>
 
             <div className="container mx-auto px-6 text-center relative z-10">
-                <div className="inline-block mb-4 px-4 py-1 bg-ossph-blue/10 dark:bg-ossph-light/20 rounded-full">
-                    <span className="text-ossph-blue dark:text-ossph-light font-semibold text-sm">
-                        🎬 Lead Video Editor & AI Content Specialist
-                    </span>
-                </div>
                 <h2 className="text-4xl lg:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
                     Muhammad Mohsin Yaqoob
                     <span className="block text-3xl lg:text-5xl mt-2 bg-gradient-to-r from-ossph-blue to-ossph-light bg-clip-text text-transparent">

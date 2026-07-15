@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import mohsinLogo from '../assets/Mohsin.png'
+import mohsinLogo from '../assets/DP 1.png'
+import mohsinResume from '../assets/M.Mohsin CV.pdf'
 
 const navLinks = [
     { id: 'home', label: 'Home' },
@@ -27,7 +28,7 @@ function Navbar({ isDark, toggleTheme, onLogoClick }) {
                     <nav className="flex flex-wrap items-center justify-between">
                         <div className="flex items-center space-x-6">
                             <img
-                                className="h-10 cursor-pointer"
+                                className="h-14 w-14 object-cover cursor-pointer flex-shrink-0"
                                 src={mohsinLogo}
                                 alt="Muhammad Mohsin Yaqoob logo"
                                 style={{ borderRadius: '50%' }}
@@ -46,13 +47,12 @@ function Navbar({ isDark, toggleTheme, onLogoClick }) {
 
                         <div className="flex items-center space-x-4">
                             <a
-                                href="https://www.linkedin.com/in/im-mohsin-y11"
+                                href={mohsinResume}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="flex items-center space-x-2 px-4 py-2 bg-ossph-blue hover:bg-ossph-dark text-white rounded-lg transition shadow-md hover:shadow-lg"
                             >
-                                <i className="fab fa-linkedin text-lg"></i>
-                                <span className="hidden sm:block text-sm font-medium">Connect on LinkedIn</span>
+                                <span className="hidden sm:block text-sm font-medium">My CV</span>
                             </a>
                             <button
                                 id="theme-toggle"
