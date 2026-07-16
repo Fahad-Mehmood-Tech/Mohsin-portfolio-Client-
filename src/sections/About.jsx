@@ -16,7 +16,7 @@ function About() {
                     </h2>
                 </div>
 
-                <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div className="max-w-7x1 mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                     {/* Left: Photo */}
                     <div className="flex justify-center lg:justify-end" data-aos="fade-right">
                         <div className="relative">

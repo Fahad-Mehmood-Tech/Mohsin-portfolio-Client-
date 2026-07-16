@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Mohsin-portfolio-Client-/',   // 👈 exact case + trailing dash ke sath
+  base: '/',
 })
