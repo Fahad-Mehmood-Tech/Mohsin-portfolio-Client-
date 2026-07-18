@@ -1,4 +1,7 @@
-
+import metabrains from '../assets/Meta Brains Image.png'
+import genaiskool from '../assets/gen Ai Skool.png'
+// import genaiskool from '../assets/gen Ai Skool.png'
+// import genaiskool from '../assets/gen Ai Skool.png'
 const projects = [
     {
         id: 'metabrains',
@@ -7,8 +10,7 @@ const projects = [
         description:
             'Lead Video Editor at MetaBrains, responsible for editing professional educational courses for global learners. I manage the complete post-production workflow, including video editing, AI voice integration, screen recording synchronization, and final content optimization.',
         tools: ['CapCut', 'Adobe Premiere Pro', 'DaVinci Resolve', 'ElevenLabs'],
-        // 👉 YAHAN video file/link add karni hai (e.g. import metabrainsVideo from '../assets/videos/metabrains.mp4')
-        video: null,
+        image: metabrains,
         site: 'https://www.metabrains.com/',
     },
     {
@@ -18,7 +20,6 @@ const projects = [
         description:
             'Co-Founder and Head of Post-Production at Narrative Orbit, leading video editing, post-production workflows, and creative execution. I ensure high-quality visual content while maintaining consistent branding across digital media projects.',
         tools: ['Adobe Premiere Pro', 'CapCut', 'DaVinci Resolve', 'Photoshop', 'Canva'],
-        // 👉 YAHAN video file/link add karni hai
         video: null,
         site: 'https://www.metabrains.com/',
     },
@@ -29,8 +30,7 @@ const projects = [
         description:
             'Create educational content focused on Artificial Intelligence and emerging technologies. Responsible for video editing, thumbnail design, branding, and producing engaging content for the YouTube channel.',
         tools: ['CapCut', 'Adobe Premiere Pro', 'Adobe Photoshop', 'Canva'],
-        // 👉 YAHAN video file/link add karni hai
-        video: null,
+        image: genaiskool,
         site: 'https://www.metabrains.com/',
     },
     {
@@ -40,9 +40,6 @@ const projects = [
         description:
             'Design creative visual content for businesses and digital platforms, including social media posts, branding materials, advertisements, YouTube thumbnails, posters, logos, and other marketing assets.',
         tools: ['Adobe Photoshop', 'Canva'],
-        // 👉 YAHAN video file/link add karni hai
-        video: null,
-        site: 'https://www.metabrains.com/',
     },
 ]
 
@@ -70,20 +67,13 @@ function Projects() {
                             key={project.id}
                             className="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-ossph-blue/10 overflow-hidden"
                         >
-                            {/* ============================================================
-                  VIDEO YAHAN DIKHEGI. Jab video file mil jaye to import karke
-                  neeche wala <video> tag use karein, ya YouTube embed <iframe> daalein.
-                  Example (local file):
-                    <video src={project.video} controls className="w-full h-full object-cover" />
-                  Example (YouTube embed):
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" className="w-full h-full" allowFullScreen />
-                 ============================================================ */}
+
                             <div className="w-1x1 aspect-video bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-                                {project.video ? (
-                                    <video src={project.video} controls className="w-1x1 h-1x1 object-cover" />
+                                {project.image ? (
+                                    <img src={project.image} alt={project.name} className="w-1x1 h-1x1 object-cover" />
                                 ) : (
                                     <span className="text-sm text-gray-500 dark:text-gray-400">
-                                        Video coming soon — {project.name}
+                                        Image coming soon — {project.name}
                                     </span>
                                 )}
                             </div>

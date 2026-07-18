@@ -117,7 +117,7 @@ function Navbar({ isDark, toggleTheme, onLogoClick }) {
             <div className="hidden md:block relative">
                 <nav
                     className={`w-full flex items-center justify-center bg-ossph-pale dark:bg-gray-800 transition-all duration-500 ease-in-out ${isScrolled
-                        ? 'fixed top-3 left-1/2 -translate-x-1/2 w-fit z-50 rounded-full shadow-2xl px-12 py-4 gap-10'
+                        ? 'fixed top-3 left-1/2 -translate-x-1/2 w-fit z-50 rounded-full shadow-2xl px-12 py-2 gap-10'
                         : 'relative shadow-md px-10 py-2 gap-8'
                         }`}
                     style={{

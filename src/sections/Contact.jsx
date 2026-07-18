@@ -1,5 +1,5 @@
 import { Mail, MessageCircle, Linkedin } from '../icons.jsx'
-
+import { useState, useEffect } from 'react'
 const contactMethods = [
     {
         id: 'whatsapp',
@@ -20,7 +20,7 @@ const contactMethods = [
         label: 'LinkedIn',
         value: 'in/im-mohsin-y11',
         href: 'https://www.linkedin.com/in/im-mohsin-y11',
-        Icon: Linkedin,
+        Icon: "fab fa-linkedin text-xl object-contain",
     },
 ]
 
@@ -50,7 +50,7 @@ function Contact() {
                             rel="noreferrer"
                             className="bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/30 rounded-2xl p-8 transition transform hover:scale-105 shadow-xl"
                         >
-                            <Icon size={32} className="text-white mx-auto mb-4" />
+                            <i className={Icon}> </i>
                             <p className="text-white font-semibold mb-1">{label}</p>
                             <p className="text-white/80 text-sm break-words">{value}</p>
                         </a>

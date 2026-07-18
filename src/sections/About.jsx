@@ -24,7 +24,7 @@ function About() {
                             <img
                                 src={mohsinPhoto}
                                 alt="Muhammad Mohsin Yaqoob"
-                                className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-cover rounded-2xl shadow-xl border-4 border-white dark:border-gray-800"
+                                className="relative w-72 h-75 sm:w-80 sm:h-90 lg:w-96 lg:h-100 object-cover rounded-2xl shadow-xl border-4 border-white dark:border-gray-800"
                             />
                         </div>
                     </div>

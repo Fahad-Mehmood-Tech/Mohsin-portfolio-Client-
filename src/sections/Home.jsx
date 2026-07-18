@@ -17,11 +17,13 @@ function Home() {
             <div className="container mx-auto px-6 text-center relative z-10">
                 <h2 className="text-4xl lg:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
                     Muhammad Mohsin Yaqoob
-                    <span className="block max-w-3xl inline-flex text-3xl lg:text-4xl mt-2 bg-gradient-to-r from-ossph-blue to-ossph-light bg-clip-text text-transparent">
-                        Educational Content Creator | Professional Video Editor | AI Content Creation Specialist
+                    <span className="block max-w-4xl inline-flex text-3xl lg:text-3xl mt-2 bg-gradient-to-r from-ossph-blue to-ossph-light bg-clip-text text-transparent">
+                        Educational Content Creator | Professional Video Editor |
+                        <br />
+                        AI Content Creation Specialist
                     </span>
                 </h2>
-                <p className="text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+                <p className="text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-3xl mx-auto">
                     I create engaging educational content by combining professional video editing, AI-powered workflows, and creative design. With experience in online course production, AI tutorials, and digital media, I transform ideas into visually compelling learning experiences that educate, engage, and inspire.
                 </p>
 
