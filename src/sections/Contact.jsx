@@ -19,7 +19,7 @@ const contactMethods = [
         label: 'LinkedIn',
         value: 'in/im-mohsin-y11',
         href: 'https://www.linkedin.com/in/im-mohsin-y11',
-        Icon: "fab fa-linkedin text-xl object-contain",
+        Icon: "fab fa-linkedin text-xl",
     },
 ]
 

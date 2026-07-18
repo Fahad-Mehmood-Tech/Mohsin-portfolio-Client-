@@ -1,6 +1,6 @@
 import metabrains from '../assets/Meta Brains Image.png'
 import genaiskool from '../assets/gen Ai Skool.png'
-// import genaiskool from '../assets/gen Ai Skool.png'
+import narrativeorbit from '../assets/Narrative Orbit.png'
 // import genaiskool from '../assets/gen Ai Skool.png'
 const projects = [
     {
@@ -11,7 +11,7 @@ const projects = [
             'Lead Video Editor at MetaBrains, responsible for editing professional educational courses for global learners. I manage the complete post-production workflow, including video editing, AI voice integration, screen recording synchronization, and final content optimization.',
         tools: ['CapCut', 'Adobe Premiere Pro', 'DaVinci Resolve', 'ElevenLabs'],
         image: metabrains,
-        site: 'https://www.metabrains.com/',
+        site: 'https://www.metabrains.org/',
     },
     {
         id: 'narrative-orbit',
@@ -20,8 +20,8 @@ const projects = [
         description:
             'Co-Founder and Head of Post-Production at Narrative Orbit, leading video editing, post-production workflows, and creative execution. I ensure high-quality visual content while maintaining consistent branding across digital media projects.',
         tools: ['Adobe Premiere Pro', 'CapCut', 'DaVinci Resolve', 'Photoshop', 'Canva'],
-        video: null,
-        site: 'https://www.metabrains.com/',
+        image: narrativeorbit,
+        site: 'https://narrativeorbit.dpdns.org/#',
     },
     {
         id: 'gen-ai-skool',
@@ -31,7 +31,7 @@ const projects = [
             'Create educational content focused on Artificial Intelligence and emerging technologies. Responsible for video editing, thumbnail design, branding, and producing engaging content for the YouTube channel.',
         tools: ['CapCut', 'Adobe Premiere Pro', 'Adobe Photoshop', 'Canva'],
         image: genaiskool,
-        site: 'https://www.metabrains.com/',
+        site: 'https://youtube.com/@genaiskool?si=dCmFU0-l-j49M846',
     },
     {
         id: 'graphic-design',
@@ -90,7 +90,7 @@ function Projects() {
                                                 href={project.site}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="text-xs px-6 py-2 bg-ossph-blue/10 dark:bg-ossph-light/20 text-ossph-blue dark:text-ossph-light rounded-full hover:bg-ossph-blue/20 dark:hover:bg-ossph-light/30 transition-colors"
+                                                className="text-xs px-6 py-2 bg-ossph-blue/10 dark:bg-ossph-light/20 text-ossph-blue dark:text-ossph-light rounded-full hover:bg-ossph-blue/20 hover:border-ossph-blue dark:hover:bg-ossph-light/30 transition-colors"
                                             >
                                                 <i className="fas fa-external-link-alt mr-2"></i>
                                                 Visit Site
