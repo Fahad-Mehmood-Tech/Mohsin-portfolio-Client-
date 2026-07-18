@@ -64,7 +64,9 @@ function App() {
               <i className="fab fa-linkedin text-xl"></i>
             </a>
             <a
-              href="mailto:immohsiny@outlook.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=immohsiny@gmail.com"
+              target="_blank"
+              rel="noreferrer"
               className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-ossph-light hover:text-ossph-dark transition"
             >
               <i className="fas fa-envelope text-xl"></i>
@@ -81,6 +83,17 @@ function App() {
           <div className="border-t border-white/10 pt-6 text-gray-400 text-sm">
             © 2026 Muhammad Mohsin Yaqoob. All rights reserved.
           </div>
+          <p className="text-center text-xs text-gray-500 mt-3">
+            Designed & Developed by{' '}
+            <a
+              href="https://www.linkedin.com/in/fahad-mehmood-687421388/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-400 hover:text-ossph-light transition"
+            >
+              Fahad Mehmood
+            </a>
+          </p>
         </div>
       </footer>
 

@@ -20,6 +20,7 @@ const projects = [
         tools: ['Adobe Premiere Pro', 'CapCut', 'DaVinci Resolve', 'Photoshop', 'Canva'],
         // 👉 YAHAN video file/link add karni hai
         video: null,
+        site: 'https://www.metabrains.com/',
     },
     {
         id: 'gen-ai-skool',
@@ -30,6 +31,7 @@ const projects = [
         tools: ['CapCut', 'Adobe Premiere Pro', 'Adobe Photoshop', 'Canva'],
         // 👉 YAHAN video file/link add karni hai
         video: null,
+        site: 'https://www.metabrains.com/',
     },
     {
         id: 'graphic-design',
@@ -40,6 +42,7 @@ const projects = [
         tools: ['Adobe Photoshop', 'Canva'],
         // 👉 YAHAN video file/link add karni hai
         video: null,
+        site: 'https://www.metabrains.com/',
     },
 ]
 
@@ -60,7 +63,7 @@ function Projects() {
                 </div>
 
                 <div
-                    className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center"
+                    className="max-w-6.5xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-14 items-center"
                 >
                     {projects.map((project) => (
                         <div
@@ -88,19 +91,22 @@ function Projects() {
                             <div className="p-6">
                                 <div className="flex items-center flex-wrap gap-2 mb-2">
                                     <h3 className="text-xl font-bold text-gray-900 dark:text-white">{project.name}</h3>
-                                    {project.site && (
-                                        <a
-                                            href={project.site}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-xs px-2 py-1 bg-ossph-blue/10 dark:bg-ossph-light/20 text-ossph-blue dark:text-ossph-light rounded hover:bg-ossph-blue/20 dark:hover:bg-ossph-light/30 transition-colors"
-                                        >
-                                            Visit Site
-                                        </a>
-                                    )}
                                     <span className="text-xs font-semibold px-3 py-1 bg-ossph-blue/10 dark:bg-ossph-light/20 text-ossph-blue dark:text-ossph-light rounded-full">
                                         {project.role}
                                     </span>
+                                    <div className="ml-auto">
+                                        {project.site && (
+                                            <a
+                                                href={project.site}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-xs px-6 py-2 bg-ossph-blue/10 dark:bg-ossph-light/20 text-ossph-blue dark:text-ossph-light rounded-full hover:bg-ossph-blue/20 dark:hover:bg-ossph-light/30 transition-colors"
+                                            >
+                                                <i className="fas fa-external-link-alt mr-2"></i>
+                                                Visit Site
+                                            </a>
+                                        )}
+                                    </div>
                                 </div>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
                                     {project.description}

@@ -4,7 +4,7 @@ function About() {
     return (
         <section
             id="about"
-            className="min-h-screen flex items-center bg-gray-50 dark:bg-gray-900 py-20"
+            className="min-h-screen flex items-center bg-gray-50 dark:bg-gray-900 py-20 overflow-hidden"
         >
             <div className="container mx-auto px-6">
                 <div className="text-center mb-12" data-aos="fade-up">

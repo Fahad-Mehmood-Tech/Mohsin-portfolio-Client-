@@ -1,3 +1,4 @@
+import filmstrip from '../assets/Home Tabs.png'
 
 function Home() {
     return (
@@ -7,16 +8,21 @@ function Home() {
         >
             <div className="absolute top-0 right-0 w-96 h-96 bg-ossph-blue/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-ossph-light/5 rounded-full blur-3xl"></div>
+            <img
+                src={filmstrip}
+                alt=""
+                className="hidden md:block absolute top-1/2 -translate-y-1/2 right-0 w-[400px] lg:w-[550px] max-w-[45vw] opacity-[0.1] dark:opacity-[0.12] rotate-6 pointer-events-none select-none z-0"
+            />
 
             <div className="container mx-auto px-6 text-center relative z-10">
                 <h2 className="text-4xl lg:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
                     Muhammad Mohsin Yaqoob
-                    <span className="block text-3xl lg:text-5xl mt-2 bg-gradient-to-r from-ossph-blue to-ossph-light bg-clip-text text-transparent">
-                        Video Editor & AI Course Production Specialist
+                    <span className="block max-w-3xl inline-flex text-3xl lg:text-4xl mt-2 bg-gradient-to-r from-ossph-blue to-ossph-light bg-clip-text text-transparent">
+                        Educational Content Creator | Professional Video Editor | AI Content Creation Specialist
                     </span>
                 </h2>
                 <p className="text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
-                    I create high-quality educational content by combining professional video editing, AI-powered workflows, motion graphics, and visual storytelling. I specialize in transforming raw recordings into engaging online courses that deliver an exceptional learning experience.
+                    I create engaging educational content by combining professional video editing, AI-powered workflows, and creative design. With experience in online course production, AI tutorials, and digital media, I transform ideas into visually compelling learning experiences that educate, engage, and inspire.
                 </p>
 
                 <div className="flex flex-wrap justify-center gap-3 mb-12">

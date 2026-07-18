@@ -11,8 +11,8 @@ const contactMethods = [
     {
         id: 'email',
         label: 'Email',
-        value: 'immohsiny@outlook.com',
-        href: 'mailto:immohsiny@outlook.com',
+        value: 'immohsiny@gmail.com',
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=immohsiny@gmail.com",
         Icon: Mail,
     },
     {
