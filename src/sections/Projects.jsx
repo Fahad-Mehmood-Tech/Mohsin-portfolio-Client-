@@ -90,7 +90,7 @@ function Projects() {
                                                 href={project.site}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="text-xs px-6 py-2 bg-ossph-blue/10 dark:bg-ossph-light/20 text-ossph-blue dark:text-ossph-light rounded-full hover:bg-ossph-blue/20 hover:border-ossph-blue dark:hover:bg-ossph-light/30 transition-colors"
+                                                className="text-xs px-6 py-2 bg-ossph-blue/10 border-ossph-blue text-ossph-blue dark:border-ossph-light dark:text-ossph-light rounded-full hover:bg-ossph-blue/20 dark:hover:bg-ossph-light/20 transition flex items-center gap-1"
                                             >
                                                 <i className="fas fa-external-link-alt mr-2"></i>
                                                 Visit Site
