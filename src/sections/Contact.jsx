@@ -1,4 +1,3 @@
-import { Mail, MessageCircle, Linkedin } from '../icons.jsx'
 import { useState, useEffect } from 'react'
 const contactMethods = [
     {
@@ -6,14 +5,14 @@ const contactMethods = [
         label: 'WhatsApp',
         value: '+92 309 6157211',
         href: 'https://wa.me/923096157211',
-        Icon: MessageCircle,
+        Icon: "fab fa-whatsapp text-xl",
     },
     {
         id: 'email',
         label: 'Email',
         value: 'immohsiny@gmail.com',
         href: "https://mail.google.com/mail/?view=cm&fs=1&to=immohsiny@gmail.com",
-        Icon: Mail,
+        Icon: "fas fa-envelope text-xl",
     },
     {
         id: 'linkedin',
