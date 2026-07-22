@@ -56,12 +56,12 @@ function App() {
           <p className="text-gray-300 text-sm mb-4">Video Editor & AI Content Specialist</p>
           <div className="flex justify-center space-x-4 mb-6">
             <a
-              href="https://www.linkedin.com/in/im-mohsin-y11"
+              href="https://wa.me/923096157211"
               target="_blank"
               rel="noreferrer"
               className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-ossph-light hover:text-ossph-dark transition"
             >
-              <i className="fab fa-linkedin text-xl"></i>
+              <i className="fab fa-whatsapp text-xl"></i>
             </a>
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=immohsiny@gmail.com"
@@ -71,14 +71,16 @@ function App() {
             >
               <i className="fas fa-envelope text-xl"></i>
             </a>
+
             <a
-              href="https://wa.me/923096157211"
+              href="https://www.linkedin.com/in/im-mohsin-y11"
               target="_blank"
               rel="noreferrer"
               className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-ossph-light hover:text-ossph-dark transition"
             >
-              <i className="fab fa-whatsapp text-xl"></i>
+              <i className="fab fa-linkedin text-xl"></i>
             </a>
+
           </div>
           <div className="border-t border-white/10 pt-6 text-gray-400 text-sm">
             © 2026 Muhammad Mohsin Yaqoob. All rights reserved.
