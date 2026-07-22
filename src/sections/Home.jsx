@@ -1,4 +1,4 @@
-import filmstrip from '../assets/Home Tabs.png'
+import filmstrip from '../assets/Home Tabs(1).png'
 
 function Home() {
     return (
