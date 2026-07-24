@@ -75,7 +75,7 @@ function Navbar({ isDark, toggleTheme, onLogoClick }) {
                             <div className="h-6 w-px bg-ossph-blue/30 dark:bg-ossph-light/30"></div>
                             <div>
                                 <h1 className="text-2xl lg:text-3xl font-bold text-ossph-blue dark:text-ossph-light">
-                                    Muhammad Mohsin Yaqoob
+                                    fahad mehmood
                                 </h1>
                                 <p className="text-xs text-gray-600 dark:text-gray-400">
                                     Video Editor & AI Content Specialist
