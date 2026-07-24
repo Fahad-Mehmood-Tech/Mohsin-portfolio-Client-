@@ -1,5 +1,5 @@
 import mohsinPhoto from '../assets/DP 1.png'
-
+// import scissorsFilm from '../assets/bp2.png'
 function About() {
     return (
         <section
@@ -8,6 +8,12 @@ function About() {
         >
             <div className="container mx-auto px-6">
                 <div className="text-center mb-12" data-aos="fade-up">
+                    {/* <img
+                        src={scissorsFilm}
+                        alt=""
+                        className="hidden md:block absolute bottom-0 right-0 w-[280px] lg:w-[350px] max-w-[35vw]
+             opacity-[0.08] dark:opacity-[0.1] pointer-events-none select-none z-0 -rotate-3"
+                    /> */}
                     <span className="text-ossph-blue dark:text-ossph-light font-semibold text-sm uppercase tracking-widest">
                         About Me
                     </span>

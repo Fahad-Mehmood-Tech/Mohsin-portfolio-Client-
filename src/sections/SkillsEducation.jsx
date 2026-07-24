@@ -1,3 +1,4 @@
+// import waveform from '../assets/bp3.png'
 
 const skills = [
     'AI Voice Synchronization',
@@ -27,6 +28,12 @@ function SkillsEducation() {
         >
             <div className="container mx-auto px-6">
                 <div className="text-center mb-12" data-aos="fade-up">
+                    {/* <img
+                        src={waveform}
+                        alt=""
+                        className="hidden md:block absolute align-top top-0 left-0 h-full w-full max-w-[35vw] object-cover 
+                        opacity-[0.08] dark:opacity-[0.1] pointer-events-none select-none z-0"
+                    /> */}
                     <span className="text-ossph-blue dark:text-ossph-light font-semibold text-sm uppercase tracking-widest">
                         Expertise
                     </span>

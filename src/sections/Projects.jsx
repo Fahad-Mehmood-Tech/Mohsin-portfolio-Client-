@@ -1,7 +1,8 @@
 import metabrains from '../assets/Meta Brains Image.png'
 import genaiskool from '../assets/gen Ai Skool.png'
 import narrativeorbit from '../assets/Narrative Orbit.png'
-// import genaiskool from '../assets/gen Ai Skool.png'
+import graphicdesign from '../assets/design.jpg'
+// import filmstripPlay from '../assets/bp4.png'
 const projects = [
     {
         id: 'metabrains',
@@ -40,6 +41,7 @@ const projects = [
         description:
             'Design creative visual content for businesses and digital platforms, including social media posts, branding materials, advertisements, YouTube thumbnails, posters, logos, and other marketing assets.',
         tools: ['Adobe Photoshop', 'Canva'],
+        image: graphicdesign,
     },
 ]
 
@@ -51,6 +53,12 @@ function Projects() {
         >
             <div className="container mx-auto px-6 w-full">
                 <div className="text-center mb-10" data-aos="fade-up">
+                    {/* <img
+                        src={filmstripPlay}
+                        alt=""
+                        className="hidden lg:block absolute top-10 left-1/2 -translate-x-1/2 w-[500px] xl:w-[650px]
+             opacity-[0.06] dark:opacity-[0.08] pointer-events-none select-none z-0"
+                    /> */}
                     <span className="text-ossph-blue dark:text-ossph-light font-semibold text-sm uppercase tracking-widest">
                         Portfolio
                     </span>
